@@ -26,7 +26,7 @@ def BuildManegementBilling(generalRevenue, groupsCompanies, generalRevenuePropos
     col1, col2, col3 = st.columns([2,1,1])
     with col1:
         groupsCompanies = groups_companies(day_ManegementBilling1, day_ManegementBilling2)
-        selected_groups = st.multiselect("Selecione um grupo:", ['Outros'] + sorted(filter(None, groupsCompanies['NOME'].unique())), default=[], placeholder='Grupos')
+        selected_groups = st.multiselect("Selecione um grupo de clientes:", ['Outros'] + sorted(filter(None, groupsCompanies['NOME'].unique())), default=[], placeholder='Grupos')
 
     if selected_groups:
         selected_groups.append(None)
