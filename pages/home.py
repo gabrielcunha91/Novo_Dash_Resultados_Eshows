@@ -20,7 +20,7 @@ def render():
     col3.button(label="Logout", on_click=logout)
     
     component_effect_underline()
-    st.write('## Resultados')
+    st.write('## Resultados Consolidados')
     st.markdown('<div class="full-width-line-white"></div>', unsafe_allow_html=True)
     st.markdown('<div class="full-width-line-black"></div>', unsafe_allow_html=True)
 
